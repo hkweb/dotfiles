@@ -1,0 +1,11 @@
+escape ^Tt 
+markkeys h=^B:l=^F:$=^E:^U=^Z:^D=^V
+bind c screen zsh 
+hardstatus on
+hardstatus alwayslastline "screen |%c %m/%d | %w"
+
+screen 1
+screen 2
+screen 3
+screen 0
+
