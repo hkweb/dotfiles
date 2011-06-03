@@ -55,3 +55,19 @@ endfunction
 
 autocmd BufWritePre * call RTrim()
 
+
+" vundle plugin install
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/vundle.git/ "vundleのディレクトリ
+call vundle#rc()
+
+"Bundle 'Shougo/neocomplcache'
+"Bundle 'Shougo/unite.vim'
+"Bundle 'thinca/vim-ref'
+"Bundle 'thinca/vim-quickrun'
+Bundle 'tpope/vim-surround'
+
+filetype plugin indent on " required!
+
