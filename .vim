@@ -1,1 +1,0 @@
-/home/hata/.vim

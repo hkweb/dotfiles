@@ -60,7 +60,7 @@ autocmd BufWritePre * call RTrim()
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/vundle.git/ "vundleのディレクトリ
+set rtp+=~/.vim/vundle/ "vundleのディレクトリ
 call vundle#rc()
 
 "Bundle 'Shougo/neocomplcache'
