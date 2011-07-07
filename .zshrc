@@ -1,3 +1,4 @@
+export EDITOR=vi
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -15,7 +16,7 @@ fi
 PATH=$PATH:/opt/appengine-java-sdk-1.3.4/bin/:/home/hata/bin
 
 # lsしたときのディレクトリの色を変える
-#export LSCOLORS=Exfxcxdxbxegedabagacad 
+#export LSCOLORS=Exfxcxdxbxegedabagacad
 
 
 # PROMPT
@@ -25,7 +26,7 @@ setopt transient_rprompt # 右側まで入力がきたら時間を消す
 setopt prompt_subst # 便利なプロント
 bindkey -e # emacsライクなキーバインド
 
-export EDITOR=emacs # エディタはemacs
+export EDITOR=vim # エディタはemacs
 
 
 autoload -U compinit # 強力な補完機能
@@ -57,7 +58,7 @@ bindkey "^N" history-beginning-search-forward-end
 #
 ## alias
 #alias ls="ls -G --color=auto"
-#zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
+zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 #
 #
 #[ -f ~/.zshrc.include ] && source ~/.zshrc.include # 設定ファイルのinclude

@@ -1,3 +1,5 @@
+source '.screenrc.local'
+
 escape ^Tt 
 markkeys h=^B:l=^F:$=^E:^U=^Z:^D=^V
 bind c screen zsh 
@@ -8,4 +10,3 @@ screen 1
 screen 2
 screen 3
 screen 0
-
