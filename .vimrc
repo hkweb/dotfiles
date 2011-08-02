@@ -4,6 +4,10 @@
 " viとの互換性をとらない(vimの独自拡張機能を使う為)
 "set nocompatible
 
+if filereadable($HOME.'/.vimprofile')
+  source $HOME/.vimprofile
+endif
+
 " 改行コードの自動認識
 set fileformats=unix,dos,mac
 set history=500
@@ -24,10 +28,10 @@ set termencoding=utf-8
 set fileencodings=utf-8,ucs-bom,euc-jp,cp932,iso-2022-jp
 set fileencodings+=,ucs-2le,ucs-2,utf-8
 set tabpagemax=200
-set expandtab
-set softtabstop=2
-set tabstop=2
-set shiftwidth=2
+"set expandtab
+"set softtabstop=2
+"set tabstop=2
+"set shiftwidth=2
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set number
 set nowrapscan    "検索でファイル終端に来たら先頭に戻らない
